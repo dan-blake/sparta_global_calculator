@@ -1,4 +1,4 @@
-function calculator() {
+
     // get the user inputs
     var value1 = prompt('enter first value');
     var value2 = prompt('enter the second value');
@@ -6,60 +6,8 @@ function calculator() {
     var run = true
 
 
-while(run == true){
-  switch(choice){
-    case "s":
-    var result = value1 - value2
-    alert(`Your answer is ${result}`)
-    var run1 = confirm("Would you like to do another action?")
-    if (run1 == false){
-      console.log("working")
-    run = false;
-    break;
-    }  else {
-      calculator()
-    }
-    break;
-    case "m":
-    var result = value1 * value2
-    alert(`Your answer is ${result}`)
-    var run1 = confirm("Would you like to do another action?")
-    if (run1 == false){
-      run = false;
-      break;
-    }  else {
-        calculator()
-      }
-    break;
-    case "d":
-    var result = value1 / value2
-    alert(`Your answer is ${result}` )
-    var run1 = confirm("Would you like to do another action?")
-    if (run1 == false){
-      run = false;
-      break;
-    }  else {
-        calculator()
-      }
-    break;
-    case "a":
-    var result = parseInt(value1) + parseInt(value2)
-    alert(`Your answer is ${result}`)
-    var run1 = confirm("Would you like to do another action?")
-    if (run1 == false){
-      run = false;
-      break;
-    }else {
-      calculator()
-    }
-    break;
-  }}}
 
- document.addEventListener("DOMContentLoaded", calculator())
-// DOM manipulation used to run a recursive function
-
-
- switch (choice) {
+ switch (choice){
    case "s":
    var result = value1 - value2
    alert(`Your answer is ${result}`)
@@ -75,5 +23,5 @@ while(run == true){
    default:
    var result = parseInt(value1) + parseInt(value2)
    alert(`Your answer is ${result}`)
- };
+  }
  // No functions used above
