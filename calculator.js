@@ -53,7 +53,27 @@ while(run == true){
       calculator()
     }
     break;
-  } }}
-// hello()
-// }
+  }}}
+
  document.addEventListener("DOMContentLoaded", calculator())
+// DOM manipulation used to run a recursive function
+
+
+ switch (choice) {
+   case "s":
+   var result = value1 - value2
+   alert(`Your answer is ${result}`)
+   break;
+   case "m":
+   var result = value1 * value2
+   alert(`Your answer is ${result}`)
+   break;
+   case "d":
+   var result = value1 / value2
+   alert(`Your answer is ${result}` )
+   break;
+   default:
+   var result = parseInt(value1) + parseInt(value2)
+   alert(`Your answer is ${result}`)
+ };
+ // No functions used above
